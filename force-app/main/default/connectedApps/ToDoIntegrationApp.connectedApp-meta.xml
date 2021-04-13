@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ConnectedApp xmlns="http://soap.sforce.com/2006/04/metadata">
+    <contactEmail>dev2-epam@mail.ru</contactEmail>
+    <iconUrl>https://login.salesforce.com/logos/Custom/Handshake_Yellow/icon.svg</iconUrl>
+    <label>ToDoIntegrationApp</label>
+    <logoUrl>https://login.salesforce.com/logos/Custom/Handshake_Yellow/logo.png</logoUrl>
+    <oauthConfig>
+        <callbackUrl>https://epam-a4-dev-ed.my.salesforce.com/services/authcallback/SalesforceToDos</callbackUrl>
+        <consumerKey>3MVG9SOw8KERNN08Cv0RQhm92iPJ3M8HAJF0nYgqeLUFU.0jnuujao18Urc3DSPnYPPYNXbWJI9xfuMWvHVt0</consumerKey>
+        <isAdminApproved>false</isAdminApproved>
+        <isConsumerSecretOptional>false</isConsumerSecretOptional>
+        <isIntrospectAllTokens>false</isIntrospectAllTokens>
+        <isSecretRequiredForRefreshToken>true</isSecretRequiredForRefreshToken>
+        <scopes>Api</scopes>
+        <scopes>Web</scopes>
+        <scopes>Full</scopes>
+        <scopes>RefreshToken</scopes>
+    </oauthConfig>
+    <oauthPolicy>
+        <ipRelaxation>ENFORCE</ipRelaxation>
+        <refreshTokenPolicy>infinite</refreshTokenPolicy>
+    </oauthPolicy>
+</ConnectedApp>
