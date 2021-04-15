@@ -19,7 +19,7 @@ private class SubToDoReceiverTest {
         createRecord();
         ToDo__c todo = [SELECT Id FROM ToDo__c LIMIT 1];
         request.requestBody = Blob.valueOf(
-            '[ { "relatedtodo" : "a010900000nVG0NAAW",  "name" : "Sub01", "id" : "a0009000005U9WwAAK" } ]'
+            '[ { "relatedTodo" : "a010900000nVG0NAAW",  "name" : "Sub01", "id" : "a0009000005U9WwAAK" } ]'
             );
         RestContext.request = request;
         List<Id> ids = SubToDoReceiver.createSub();

@@ -81,11 +81,11 @@ global with sharing class SubToDoReceiver {
     }
 
     private static Sub_ToDo__c doCustom(Map<String, Object> todo, List<Id> todoIds) {
-        todoIds.add((Id)todo.get('relatedtodo'));
+        todoIds.add((Id)todo.get('relatedTodo'));
 
         return new Sub_ToDo__c(
             Name = (String)todo.get('name'),
-            ToDo__c = (Id)todo.get('relatedtodo'),
+            ToDo__c = (Id)todo.get('relatedTodo'),
             External_Id__c = (String)todo.get('id')
         );
     }

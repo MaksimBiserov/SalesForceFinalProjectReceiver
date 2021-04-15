@@ -1,11 +1,10 @@
 @isTest
 private class ToDoReceiverTest {
 
-    // not @TestSetup because not void
     static ToDo__c createRecord() {
         ToDo__c testTodo = new ToDo__c(Name = 'Test01',
                                        Category__c = 'Today',
-                                       ExternalId__c = 'a010900000nVG0NAAW');
+                                       ExternalId__c = 'a010900000nVxLKAA0');
         insert testTodo;
         return testTodo;
     }
@@ -14,7 +13,7 @@ private class ToDoReceiverTest {
     static void testCreateTodo() {
         RestRequest request = new RestRequest();
         request.requestBody = Blob.valueOf(
-            '[ { "category" : "Today", "name" : "Test01", "id" : "a010900000nVG0NAAW" } ]'
+            '[ { "category" : "Today", "name" : "Test01", "id" : "a010900000nVxLKAA0" } ]'
             );
         RestContext.request = request;
         List<Id> ids = ToDoReceiver.createTodo();
